@@ -1,15 +1,17 @@
-// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-@import "tpl/customVariables";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
 // Core variables and mixins
 @import 
 "../lib/bootstrap/scss/variables",
 "../lib/bootstrap/scss/mixins";
 
 // Reset and dependencies
+/* 
 @import 
 "../lib/bootstrap/scss/normalize",
 "../lib/bootstrap/scss/print",
 "../lib/bootstrap/scss/glyphicons";
+ */
 
 //- Core CSS
  @import 
@@ -64,16 +66,41 @@
 "../lib/bootstrap/scss/responsive-utilities";
  */
 
-
+$color-blue: #1976d2;
+$color-red: #f44336;
+$color-green: #66bb6a;
 
 @import
 "tpl/customVariables",
 "tpl/main",
 "tpl/nav",
+"tpl/slider",
 "tpl/csslogo",
 "tpl/how",
-"tpl/when-whork",
-"tpl/footer",
-"tpl/cube",
-"tpl/other",
-"tpl/slider";
+// "tpl/when-whork",
+// "tpl/footer",
+// "tpl/cube",
+"tpl/other";
+
+
+
+
+.advantages {
+  background: $color-blue;
+  color: #fff;
+  h2 {
+    text-align: center;
+    margin: 40px auto;
+  }
+  ul.advantages-list {
+    margin: 60px auto;
+    list-style: none;
+    li {
+      margin: 20px auto;
+      img {
+        float: left;
+        margin-right: 15px;
+      }
+    }
+  }
+}

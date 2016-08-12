@@ -1,24 +1,33 @@
 doctype html
 html(lang='ru')
   head
-    title Как Ни Крути
-    meta(name='description', content='')
-    meta(name='keywords', content='')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
-    //if lt IE 9
-      | [if lt IE 9]
-      | script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-      | script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-      | [endif]
+
+    title Как Ни Крути
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+
+    meta(name='theme-color' content='#1976d2')
+    link(rel='shortcut icon' href='./assets/img/favicon.ico' type='image/x-icon')
+    link(rel='apple-touch-icon' href='./assets/img//apple-touch-icon.png')
+    link(rel='apple-touch-icon' sizes='57x57' href='./assets/img/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon' sizes='72x72' href='./assets/img//apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon' sizes='76x76' href='./assets/img//apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon' sizes='114x114' href='./assets/img//apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon' sizes='120x120' href='./assets/img//apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon' sizes='144x144' href='./assets/img//apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon' sizes='152x152' href='./assets/img//apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='./assets/img//apple-touch-icon-180x180.png')
+
     script(src='http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
     link(rel='stylesheet', href='./assets/css/style.css')
   body
     #top
+    // END: NAV
     nav.open
       .top
         .container
@@ -26,16 +35,16 @@ html(lang='ru')
             li.logo
               img(src='./assets/img/logo-color.png')
               h1
-                | Как Ни Крути
+                |Как Ни Крути
                 br
-                small Создание сайтов
+                small(style="padding-left: 3px;") Веб-студия
             li.contacts
               .address
                 i.fa.fa-map-marker(aria-hidden='true')
                 span
-                  | г. Волгоград
+                  | г. Волгоград, ул. Двинская д. 20
                   br
-                  | ул. Двинская д. 20
+                  | По будням с 10:00 до 19:00
               .phone
                 i.fa.fa-phone(aria-hidden='true')
                 span
@@ -64,7 +73,9 @@ html(lang='ru')
               a(href='#') Кейсы
             li
               a(href='#') Контакты
-    // END NAV
+    // END: NAV
+
+    // BEGIN: SLIDER
     .slider-container
       .slider-control.left.inactive
       .slider-control.right
@@ -100,7 +111,7 @@ html(lang='ru')
               p.slide__text-desc
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
               a.slide__text-link Ссылка на проект
-        .slide.slide-3
+        //- .slide.slide-3
           .slide__bg
           .slide__content
             svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
@@ -110,8 +121,9 @@ html(lang='ru')
               p.slide__text-desc
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
               a.slide__text-link Ссылка на проект
-    // END HEADER
+    // END: SLIDER
     #CONTENT
+      // BEGIN: HOW
       #content.how
         .container
           .row.header
@@ -192,8 +204,45 @@ html(lang='ru')
                 a(href='#') Пункт 5
               li
                 a(href='#') Пункт 6
-        // END HOW
-      .when-whork
+      // END: HOW
+      
+      // BEGIN: ADVANTAGES
+      .advantages.container-fluid
+        .container
+          .row
+            h2 Преимущества работы с нами
+            ul.advantages-list
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке речью, предупредила, свою своего лучше которой одна курсивных скатился до свой, имени. Живет злых, одна свой рыбного которое! Взобравшись.
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Образ себя единственное, большой родного переписали. Напоивший маленький переписали строчка скатился все, силуэт жизни. Пор семь запятой рыбными собрал рукописи.
+
+              .clearfix
+
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила заглавных раз семь большой по всей не встретил переписывается, вершину рыбного свой буквенных, ручеек прямо эта курсивных моей заманивший.
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Образ грамматики живет вопрос великий, эта проектах одна дорогу. Эта имеет переулка предупреждал, ему не вопроса единственное семантика послушавшись первую.
+
+              .clearfix
+
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Безорфографичный что приставка решила, имеет подпоясал толку обеспечивает правилами буквоград путь но. Букв речью, маленькая которое свое его образ курсивных.
+              li.col-sm-6
+                img(src="http://placehold.it/90x90", alt="")
+                p  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грамматики текста живет использовало своего назад агенство злых лучше? Вершину ведущими над, алфавит имеет пор. Себя о, возвращайся его рыбными!
+
+              .clearfix
+      // END: ADVANTAGES
+
+
+      //- BEGIN: WHEN-WHORK
+      //- .when-whork
         .container-fluid.line-blue
           .container
             .col-sm-6.text
@@ -218,8 +267,10 @@ html(lang='ru')
                 | Все наши партнеры очень дороги нам и мы никогда, слышите НИКОГДА не оставляем одних своих партнеров. Даже после гарантийного срока мы сделаем все что в наших силах что бы постаратся решить вашу проблему.
               p Выбирайте надежного исполнителя
             .col-sm-6.speech-bubbles
-      // END WHEN-WHORK
-      .container-fluid.cube-container
+      //- END: WHEN-WHORK
+
+
+      //- .container-fluid.cube-container
         .cube
           .container
             .back.side
@@ -229,8 +280,9 @@ html(lang='ru')
             .bottom.side
             .front.side
         // END cube
-      // END CONTENT
-    footer.container-fluid
+      //- END CONTENT
+    
+    //- footer.container-fluid
       .container
       // END FOOTER
 

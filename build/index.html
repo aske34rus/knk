@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Как Ни Крути</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--if lt IE 9
-    | [if lt IE 9]
-    | script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-    | script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-    | [endif]
-    -->
+    <title>Как Ни Крути</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#1976d2">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./assets/img//apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img//apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img//apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img//apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img//apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img//apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img//apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img//apple-touch-icon-180x180.png">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,15 +25,16 @@
   </head>
   <body>
     <div id="top"></div>
+    <!-- END: NAV-->
     <nav class="open">
       <div class="top">
         <div class="container">
           <ul class="row">
             <li class="logo"><img src="./assets/img/logo-color.png">
-              <h1>Как Ни Крути<br><small>Создание сайтов</small></h1>
+              <h1>Как Ни Крути<br><small style="padding-left: 3px;">Веб-студия</small></h1>
             </li>
             <li class="contacts">
-              <div class="address"><i aria-hidden="true" class="fa fa-map-marker"></i><span>г. Волгоград<br>ул. Двинская д. 20</span></div>
+              <div class="address"><i aria-hidden="true" class="fa fa-map-marker"></i><span>г. Волгоград, ул. Двинская д. 20<br>По будням с 10:00 до 19:00</span></div>
               <div class="phone"><i aria-hidden="true" class="fa fa-phone"></i><span>8 (8442)  <b>563-141</b><br><a href="#">Заказать звонок</a></span></div>
             </li>
             <li class="bars"><a aria-hidden="true" class="fa fa-bars"></a></li>
@@ -51,76 +56,54 @@
         </div>
       </div>
     </nav>
-    <!-- END NAV-->
-    <div class="top-panel-absolute">
-      <div class="top-panel-inner">
-        <a class="top-panel-back-url" href="http://pcvector.net/scripts/slideshow_and_scroller/463-slayder-s-parallax-effektom.html">
-          <div class="top-panel-logo" title="Назад к статье"></div>
-        </a>
+    <!-- END: NAV-->
+    <!-- BEGIN: SLIDER-->
+    <div class="slider-container">
+      <div class="slider-control left inactive"></div>
+      <div class="slider-control right"></div>
+      <ul class="slider-pagi"></ul>
+      <div class="slider">
+        <div class="slide slide-0 active">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice" class="slide__overlay">
+              <path d="M0,0 150,0 500,405 0,405" class="slide__overlay-path"></path>
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">Проект 1</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p><a class="slide__text-link">Ссылка на проект</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-1">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice" class="slide__overlay">
+              <path d="M0,0 150,0 500,405 0,405" class="slide__overlay-path"></path>
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">Проект 2</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p><a class="slide__text-link">Ссылка на проект</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide__bg"></div>
+          <div class="slide__content">
+            <svg viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice" class="slide__overlay">
+              <path d="M0,0 150,0 500,405 0,405" class="slide__overlay-path"></path>
+            </svg>
+            <div class="slide__text">
+              <h2 class="slide__text-heading">Проект 3</h2>
+              <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p><a class="slide__text-link">Ссылка на проект</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="slider-container">
-        <div class="slider-control left inactive"></div>
-        <div class="slider-control right"></div>
-        <ul class="slider-pagi"></ul>
-        <div class="slider">
-            <div class="slide slide-0 active">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Проект 1</h2>
-                        <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                        <a class="slide__text-link">Ссылка на проект</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-1 ">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Проект 2</h2>
-                        <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                        <a class="slide__text-link">Ссылка на проект</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-2">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Проект 3</h2>
-                        <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                        <a class="slide__text-link">Ссылка на проект</a>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-3">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-                        <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
-                    </svg>
-                    <div class="slide__text">
-                        <h2 class="slide__text-heading">Проект 4</h2>
-                        <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
-                        <a class="slide__text-link">Ссылка на проект</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END HEADER-->
+    <!-- END: SLIDER-->
     <div id="CONTENT">
+      <!-- BEGIN: HOW-->
       <div id="content" class="how">
         <div class="container">
           <div class="row header">
@@ -180,60 +163,43 @@
             </ul>
           </div>
         </div>
-        <!-- END HOW-->
       </div>
-      <div class="when-whork">
-        <div class="container-fluid line-blue">
-          <div class="container">
-            <div class="col-sm-6 text">
-              <h4>Адаптивность —</h4>
-              <p>это использование подвижной структуры сайта, изображений масштабируемых под разрешение экрана пользователя. Не для кого не секрет что Google лучше относится в поисковой выдаче к адаптивным сайтам.</p>
-              <p>Доля мобильных устройст в веб пространстве давно превысила обычные компьютеры, поэтому очень важно что бы пользователи не испытывали дискомфорта на вашем сайте. Мы создаем адаптивные сайты.</p>
-            </div>
-            <div class="col-sm-6 device"></div>
-          </div>
-        </div>
-        <div class="container-fluid line-red">
-          <div class="container">
-            <div class="col-sm-6 accept-file-or-checklist"></div>
-            <div class="col-sm-6 text">
-              <h4>Все просто —</h4>
-              <p>просто беремся за сложные проекты. Простые договоры без скрытых пунктов. Просто предлагаем оптимальные решения для любого бюджета. Просто даем гарантию на работу 12 месяцев. Просто исключаем доплату за незначительные доработки. Просто хватит доверять недобросовесным исполнителям. Просто работать с нами.</p>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid line-green">
-          <div class="container">
-            <div class="col-sm-6 text">
-              <h4>Вы не останитесь одни —</h4>
-              <p>Все наши партнеры очень дороги нам и мы никогда, слышите НИКОГДА не оставляем одних своих партнеров. Даже после гарантийного срока мы сделаем все что в наших силах что бы постаратся решить вашу проблему.</p>
-              <p>Выбирайте надежного исполнителя</p>
-            </div>
-            <div class="col-sm-6 speech-bubbles"></div>
+      <!-- END: HOW-->
+      <!-- BEGIN: ADVANTAGES-->
+      <div class="advantages container-fluid">
+        <div class="container">
+          <div class="row">
+            <h2>Преимущества работы с нами</h2>
+            <ul class="advantages-list">
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке речью, предупредила, свою своего лучше которой одна курсивных скатился до свой, имени. Живет злых, одна свой рыбного которое! Взобравшись.</p>
+              </li>
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Образ себя единственное, большой родного переписали. Напоивший маленький переписали строчка скатился все, силуэт жизни. Пор семь запятой рыбными собрал рукописи.</p>
+              </li>
+              <div class="clearfix"></div>
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный предупредила заглавных раз семь большой по всей не встретил переписывается, вершину рыбного свой буквенных, ручеек прямо эта курсивных моей заманивший.</p>
+              </li>
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Образ грамматики живет вопрос великий, эта проектах одна дорогу. Эта имеет переулка предупреждал, ему не вопроса единственное семантика послушавшись первую.</p>
+              </li>
+              <div class="clearfix"></div>
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Безорфографичный что приставка решила, имеет подпоясал толку обеспечивает правилами буквоград путь но. Букв речью, маленькая которое свое его образ курсивных.</p>
+              </li>
+              <li class="col-sm-6"><img src="http://placehold.it/90x90" alt="">
+                <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грамматики текста живет использовало своего назад агенство злых лучше? Вершину ведущими над, алфавит имеет пор. Себя о, возвращайся его рыбными!</p>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- END WHEN-WHORK-->
-      <div class="container-fluid cube-container">
-        <div class="cube">
-          <div class="container">
-            <div class="back side"></div>
-            <div class="left side"></div>
-            <div class="right side"></div>
-            <div class="top side"></div>
-            <div class="bottom side"></div>
-            <div class="front side"></div>
-          </div>
-        </div>
-        <!-- END cube-->
-      </div>
-      <!-- END CONTENT-->
-    </div>
-    <footer class="container-fluid">
-      <div class="container"></div>
-      <!-- END FOOTER-->
+      <!-- END: ADVANTAGES-->
       
-    </footer>
+      
+    </div>
     <!-- Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./assets/js/scripts.js"></script>

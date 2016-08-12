@@ -1,7 +1,3 @@
-$dev-color: #3366cc;
-$desing-color: #ff3333;
-$seo-color: #339933;
-
 .how {
   transition: background .3s;
   .csslogo {
@@ -49,6 +45,7 @@ $seo-color: #339933;
       display: inline-block;
       margin: 0 15px 5px 0;
       a {
+        color: #777;
         // text-decoration: underline;
         // &:hover, &:focus {
         //     text-decoration: none;
@@ -75,17 +72,18 @@ $seo-color: #339933;
     }
   }
 
+
   #dev.active {
-    h2 {color: $dev-color}
-    ul.hash li a {color: $dev-color}
+    h2 {color: $color-blue}
+    ul.hash li a {color: $color-blue}
   }
 
   #desing.active {
-    h2 {color: $desing-color}
-    ul.hash li a {color: $desing-color}
+    h2 {color: $color-red}
+    ul.hash li a {color: $color-red}
   }
   #seo.active {
-    h2 {color: $seo-color}
-    ul.hash li a {color: $seo-color}
+    h2 {color: $color-green}
+    ul.hash li a {color: $color-green}
   }
 }
