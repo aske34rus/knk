@@ -88,6 +88,7 @@ $color-green: #66bb6a;
 .advantages {
   background: $color-blue;
   color: #fff;
+  margin-bottom: 100px;
   h2 {
     text-align: center;
     margin: 40px auto;
@@ -100,6 +101,27 @@ $color-green: #66bb6a;
       img {
         float: left;
         margin-right: 15px;
+      }
+    }
+  }
+  .window {
+    position: relative;
+    text-align: center;
+    a.botton{
+      display: block;
+      position: absolute;
+      background: $color-green;
+      top: 70%;
+      left: 50%;
+      width: 250px;
+      font-size: 16px;
+      margin-left: -125px;
+      color: #fff;
+      padding: 20px 0;
+      border-radius: 35px;
+      text-decoration: none;
+      &:hover {
+        background: darken($color-green, 15%);
       }
     }
   }

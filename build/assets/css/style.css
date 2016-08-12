@@ -2147,6 +2147,18 @@ svg {
   opacity: 0.6;
 }
 
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 .class {
   background-color: #A4D8E7;
   background-image: url("http://www.00estudio.com/wp-content/uploads/diseno-web-responsive-b.png");
@@ -2203,6 +2215,7 @@ svg {
 .advantages {
   background: #1976d2;
   color: #fff;
+  margin-bottom: 100px;
 }
 
 .advantages h2 {
@@ -2222,6 +2235,30 @@ svg {
 .advantages ul.advantages-list li img {
   float: left;
   margin-right: 15px;
+}
+
+.advantages .window {
+  position: relative;
+  text-align: center;
+}
+
+.advantages .window a.botton {
+  display: block;
+  position: absolute;
+  background: #66bb6a;
+  top: 70%;
+  left: 50%;
+  width: 250px;
+  font-size: 16px;
+  margin-left: -125px;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+.advantages .window a.botton:hover {
+  background: #419345;
 }
 
 /*# sourceMappingURL=style.css.map */
