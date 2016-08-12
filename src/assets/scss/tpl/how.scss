@@ -1,0 +1,91 @@
+$dev-color: #3366cc;
+$desing-color: #ff3333;
+$seo-color: #339933;
+
+.how {
+  transition: background .3s;
+  .csslogo {
+    display: none;
+    // position: absolute;
+    float: left;
+    .header{
+      padding: 0px 0px 24px;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: $screen-sm){
+     .container{
+        padding: 0;
+     }
+    .row{
+      padding-left:285px;
+    }
+    .csslogo{
+      display: block;
+    }
+  }
+
+  .header {
+    padding: 0;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  h2:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 0;
+    border-bottom: 2px solid;
+    margin: 15px 0;
+  }
+
+
+  ul.hash {
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 0 15px 5px 0;
+      a {
+        // text-decoration: underline;
+        // &:hover, &:focus {
+        //     text-decoration: none;
+        // }
+        &::before {
+          content: '\f061';
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-weight: 600;
+          font-size: 1.2em;
+          position: relative;
+          margin: 5px 5px 5px 0;
+          // border: 1px solid;
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 0.9em;
+        }
+      }
+    }
+  }
+
+  #dev.active {
+    h2 {color: $dev-color}
+    ul.hash li a {color: $dev-color}
+  }
+
+  #desing.active {
+    h2 {color: $desing-color}
+    ul.hash li a {color: $desing-color}
+  }
+  #seo.active {
+    h2 {color: $seo-color}
+    ul.hash li a {color: $seo-color}
+  }
+}

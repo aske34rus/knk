@@ -1,0 +1,60 @@
+.when-whork {
+  .line-blue, .line-green, .line-red {
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 350px;
+  }
+
+  .line-blue{
+    @media (min-width: $screen-sm) {
+      background-image: url("../img/line-blue.jpg");
+    }
+
+    background-color: #213594;
+  }
+
+  .line-red{
+    @media (min-width: $screen-sm) {
+      background-image: url("../img/line-red.jpg");
+    }
+
+    background-color: #BE211C;
+  }
+
+  .line-green{
+    @media (min-width: $screen-sm) {
+      background-image: url("../img/line-green.jpg");
+    }
+
+    background-color: #01943B;
+  }
+
+  .device,
+  .accept-file-or-checklist,
+  .speech-bubbles{
+    display: none;
+    @media (min-width: $screen-sm){
+      display: block;
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+  .device{
+    background-image: url("../img/device.png");
+  }
+  .accept-file-or-checklist{
+    background-image: url("../img/accept-file-or-checklist.png");
+  }
+  .speech-bubbles{
+    background-image: url("../img/speech-bubbles.png");
+  }
+  .text {
+    padding: 50px 40px;
+    color: #fff;
+    h4 {
+      margin-bottom: 30px;
+    }
+  }
+}

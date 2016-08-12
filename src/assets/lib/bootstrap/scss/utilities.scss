@@ -1,0 +1,93 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  @include text-hide;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+
+
+
+
+// Custom
+// -------------------------
+.inline {display: inline}
+.block {display: block}
+.flex {display: flex}
+.inline-block {display: inline-block; vertical-align: middle}
+.inline-flex {display: inline-flex}
+.inline-table {display: inline-table}
+.list-item {display: list-item}
+.run-in {display: run-in}
+.table {display: table}
+.table-caption {display: table-caption}
+.table-column-group {display: table-column-group}
+.table-header-group {display: table-header-group}
+.table-footer-group {display: table-footer-group}
+.table-row-group {display: table-row-group}
+.table-cell {display: table-cell}
+.table-column {display: table-column}
+.table-row {display: table-row}
+.none {display: none}
+.initial {display: initial}
+.inherit {display: inherit}
+
+
+.box {
+  padding: 15px 20px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  box-shadow: 0 0px 15px #333;
+}
+
+.pointer {
+  cursor: pointer;
+}

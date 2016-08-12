@@ -1,0 +1,54 @@
+.csslogo{
+  position: relative;
+  height: 16em;
+  width: 13.7em;
+  background-image: url(../img/logo-icon.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .dev, .desing, .seo{
+    display: inline-block;
+    position: absolute;
+    transition: left .5s, top .5s, right .5s;
+    background-size: 100% 100%;
+   &.active {
+      opacity: 0.8;
+    }
+    h2 {
+      position: relative;
+      margin-left: -30px;
+    }
+  }
+  .dev {
+    background-image: url(../img/blue-work.png);
+    width: 13.6em;
+    height: 8em;
+    top: 0;
+    left: 0;
+    &.active {
+      top: -5em;
+      left: 0;
+    }
+   }
+  .seo {
+    background-image: url(../img/green-work.png);
+    width: 7em;
+    height: 12em;
+    top: 4em;
+    left: 0;
+    &.active {
+      top: 5em;
+      left: -5em;
+    }
+  }
+  .desing {
+    background-image: url(../img/red-work.png);
+    width: 7em;
+    height: 12em;
+    top: 4em;
+    right: 0;
+    &.active {
+     top: 5em;
+     right: -4em;
+    }
+  }
+}

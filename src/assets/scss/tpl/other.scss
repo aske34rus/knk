@@ -1,0 +1,70 @@
+
+.fixed{
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+#back-top {
+  position: fixed;
+  bottom: 10px;
+  right: 3%;
+  width: 80px;
+  height: 80px;
+  opacity: 0.6;
+}
+
+.class {
+  background-color: #A4D8E7;
+  background-image: url("http://www.00estudio.com/wp-content/uploads/diseno-web-responsive-b.png");
+  background-size: 80% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 5px 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #5178C8;
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+.material-hover{
+  position: relative;
+  overflow: hidden;
+}
+
+.material-hover:hover:after {
+    width: 10px;
+    height: 10px;
+    transform: scale(27);
+}
+
+.material-hover:after {
+    z-index: 1;
+    background: rgba(0, 0, 0, .1);
+}
+
+.material-hover:after {
+    position: absolute;
+    content: '';
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    z-index: 1;
+    background: rgba(0, 0, 0, .05);
+    -moz-transition: all .3s ease-in-out;
+    -webki-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+

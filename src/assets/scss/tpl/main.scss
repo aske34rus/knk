@@ -1,0 +1,16 @@
+* {
+  transition: padding 0.3s, height 0.3s, width 0.3s, opacity 0.3s;
+}
+
+body {
+  background-color: #F5F5F5;
+  background-image: url(../img/header.jpg);
+  background-position: top center;
+  background-size: auto 100vh;
+  background-attachment: fixed;
+}
+
+#content {
+  padding: 0px 15px 50px 15px;
+  background-color: #f5f5f5;
+}
