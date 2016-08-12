@@ -64,12 +64,53 @@ html(lang='ru')
               a(href='#') Кейсы
             li
               a(href='#') Контакты
-      // END NAV
-    header.container-fluid
-      .row
-        .header-body
-          .container
-      // END HEADER
+    // END NAV
+    .slider-container
+      .slider-control.left.inactive
+      .slider-control.right
+      ul.slider-pagi
+      .slider
+        .slide.slide-0.active
+          .slide__bg
+          .slide__content
+            svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
+              path.slide__overlay-path(d='M0,0 150,0 500,405 0,405')
+            .slide__text
+              h2.slide__text-heading Проект 1
+              p.slide__text-desc
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
+              a.slide__text-link Ссылка на проект
+        .slide.slide-1
+          .slide__bg
+          .slide__content
+            svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
+              path.slide__overlay-path(d='M0,0 150,0 500,405 0,405')
+            .slide__text
+              h2.slide__text-heading Проект 2
+              p.slide__text-desc
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
+              a.slide__text-link Ссылка на проект
+        .slide.slide-2
+          .slide__bg
+          .slide__content
+            svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
+              path.slide__overlay-path(d='M0,0 150,0 500,405 0,405')
+            .slide__text
+              h2.slide__text-heading Проект 3
+              p.slide__text-desc
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
+              a.slide__text-link Ссылка на проект
+        .slide.slide-3
+          .slide__bg
+          .slide__content
+            svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
+              path.slide__overlay-path(d='M0,0 150,0 500,405 0,405')
+            .slide__text
+              h2.slide__text-heading Проект 4
+              p.slide__text-desc
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.
+              a.slide__text-link Ссылка на проект
+    // END HEADER
     #CONTENT
       #content.how
         .container
@@ -195,6 +236,6 @@ html(lang='ru')
 
 
     // Scripts
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='./assets/js/scripts.js')
     // End body
