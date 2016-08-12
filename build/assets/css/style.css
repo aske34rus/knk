@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -2131,6 +2131,63 @@ svg {
   color: #66bb6a;
 }
 
+.advantages {
+  background: #1976d2;
+  color: #fff;
+}
+
+.advantages h2 {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.advantages ul.advantages-list {
+  margin: 60px auto;
+  list-style: none;
+}
+
+.advantages ul.advantages-list li {
+  margin: 20px auto;
+}
+
+.advantages ul.advantages-list li:before, .advantages ul.advantages-list li:after {
+  content: " ";
+  display: table;
+}
+
+.advantages ul.advantages-list li:after {
+  clear: both;
+}
+
+.advantages ul.advantages-list li img {
+  float: left;
+  margin-right: 15px;
+}
+
+.advantages .window {
+  position: relative;
+  text-align: center;
+}
+
+.advantages .window a.botton {
+  display: block;
+  position: absolute;
+  background: #66bb6a;
+  top: 70%;
+  left: 50%;
+  width: 250px;
+  font-size: 16px;
+  margin-left: -125px;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 35px;
+  text-decoration: none;
+}
+
+.advantages .window a.botton:hover {
+  background: #419345;
+}
+
 .fixed {
   display: block;
   position: fixed;
@@ -2212,53 +2269,32 @@ svg {
   transition: all .3s ease-in-out;
 }
 
-.advantages {
-  background: #1976d2;
-  color: #fff;
-  margin-bottom: 100px;
-}
-
-.advantages h2 {
+.services h2 {
   text-align: center;
-  margin: 40px auto;
+  margin: 60px auto 30px auto;
 }
 
-.advantages ul.advantages-list {
+.services .row {
   margin: 60px auto;
-  list-style: none;
+  padding: 30px;
+  border: 10px solid #1976d2;
 }
 
-.advantages ul.advantages-list li {
-  margin: 20px auto;
+.services .row h3 {
+  padding: 10px 0;
 }
 
-.advantages ul.advantages-list li img {
-  float: left;
-  margin-right: 15px;
+.services .row .img {
+  text-align: right;
+  margin-top: 25px;
 }
 
-.advantages .window {
-  position: relative;
-  text-align: center;
+.services .row ul {
+  padding: 10px 20px;
 }
 
-.advantages .window a.botton {
-  display: block;
-  position: absolute;
-  background: #66bb6a;
-  top: 70%;
-  left: 50%;
-  width: 250px;
-  font-size: 16px;
-  margin-left: -125px;
-  color: #fff;
-  padding: 20px 0;
-  border-radius: 35px;
-  text-decoration: none;
-}
-
-.advantages .window a.botton:hover {
-  background: #419345;
+.services .row ul li {
+  line-height: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -112,7 +112,6 @@ $(document).ready(function(){
 
       var pPos = $(window).height() + $(window).scrollTop();
 
-      console.log('ePos='+twoPos+'  pPos='+pPos);
       var fix = false;
       pPos = pPos-400;
 
